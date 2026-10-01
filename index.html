@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dff3ff" />
+  <title>Happy My Girl Day 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="assets/nothinggonna.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-pill" id="musicPill" aria-label="Kontrol musik">
+    <span class="music-note">♪</span>
+    <span id="musicText">Music off</span>
+    <button id="musicToggle" type="button" aria-label="Putar atau jeda musik">▶</button>
+  </div>
+
+  <div class="progress" aria-hidden="true">
+    <span class="progress-fill" id="progressFill"></span>
+  </div>
+
+  <main id="story">
+    <!-- PAGE 1 -->
+    <section class="page page-1" data-page="0">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="opening-glow"></div>
+      <div class="opening-card">
+        <p class="eyebrow">a little page, made only for you</p>
+        <h1>Happy<br><em>My Girl Day</em></h1>
+        <p class="opening-sub">Untuk seseorang yang entah bagaimana<br>selalu berhasil membuat hari biasa terasa istimewa.</p>
+        <button class="open-btn" id="openBtn">
+          <span>Buka untuk kamu</span>
+          <span class="arrow">↓</span>
+        </button>
+      </div>
+      <div class="scroll-hint">scroll pelan-pelan ↓</div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page page-2" data-page="1">
+      <div class="flower-sky" aria-hidden="true"></div>
+      <div class="bouquet-wrap" id="bouquet"></div>
+
+      <div class="letter">
+        <p class="letter-kicker">for my favorite person</p>
+        <h2>Kalau kata-kata<br>punya hati, ini untukmu.</h2>
+        <div class="letter-body">
+          <p>
+            Aku nggak tahu sejak kapan tepatnya kamu berubah dari sekadar seseorang
+            menjadi seseorang yang selalu aku cari di antara ramai. Tapi aku tahu satu hal:
+            sejak ada kamu, ada bagian kecil dari hari-hariku yang terasa lebih hangat.
+          </p>
+          <p>
+            Kamu mungkin nggak selalu sadar betapa indahnya keberadaanmu. Cara kamu
+            tersenyum, cara kamu bercerita, cara kamu menjadi dirimu sendiri tanpa perlu
+            berusaha menjadi siapa-siapa—semuanya punya tempat sendiri di pikiranku.
+          </p>
+          <p>
+            Hari ini bukan cuma tentang mengucapkan <i>Happy My Girl Day</i>.
+            Hari ini adalah alasan kecil untuk bilang bahwa aku bersyukur pernah dipertemukan
+            dengan kamu. Dari sekian banyak manusia dan dari sekian banyak kemungkinan,
+            semesta membiarkanku mengenal seseorang sepertimu.
+          </p>
+          <p>
+            Kalau suatu hari nanti kamu sedang capek, semoga kamu ingat bahwa ada seseorang
+            yang selalu ingin melihatmu baik-baik saja. Kalau dunia terasa terlalu ramai,
+            semoga kamu punya tempat untuk pulang. Dan kalau suatu hari kamu lupa betapa
+            berharganya dirimu, izinkan aku mengingatkanmu lagi dan lagi.
+          </p>
+          <p>
+            Aku nggak janji semua hari akan selalu sempurna. Tapi kalau boleh memilih,
+            aku ingin tetap ada di hari-hari yang sederhana: tertawa karena hal nggak penting,
+            ngobrol sampai lupa waktu, melihat kamu bahagia, dan menyimpan momen-momen kecil
+            yang suatu saat nanti akan kita rindukan.
+          </p>
+          <p class="letter-ending">
+            Jadi, untuk kamu yang mungkin sedang membaca ini sambil tersenyum kecil—
+            <strong>terima kasih sudah menjadi kamu.</strong><br>
+            Semoga hari ini selembut senyummu, setenang tatapanmu,
+            dan seindah semua hal baik yang pantas kamu dapatkan.
+          </p>
+        </div>
+        <span class="signature">— someone who is very lucky to know you ♡</span>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page page-3" data-page="2">
+      <div class="gallery-bg"></div>
+      <div class="gallery-head">
+        <p class="eyebrow">little pieces of you</p>
+        <h2>Beberapa alasan<br>kenapa kamu selalu indah.</h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo-card card-a">
+          <div class="photo-frame"><img src="assets/photo-1.jpg" alt="Foto kenangan 1"></div>
+          <figcaption>
+            <span>01</span>
+            <p>Di balik ekspresi lucu itu, ada seseorang yang selalu berhasil membuatku tersenyum.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="photo-card card-b">
+          <div class="photo-frame"><img src="assets/photo-2.jpg" alt="Foto kenangan 2"></div>
+          <figcaption>
+            <span>02</span>
+            <p>Bahkan ketika kamu sedang diam, entah kenapa kamu tetap punya cara untuk mencuri perhatian.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="photo-card card-c">
+          <div class="photo-frame"><img src="assets/photo-3.jpg" alt="Foto kenangan 3"></div>
+          <figcaption>
+            <span>03</span>
+            <p>Di tempat seindah itu pun, mataku tetap punya alasan untuk memilih melihatmu.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="photo-card card-d">
+          <div class="photo-frame"><img src="assets/photo-4.jpg" alt="Foto kenangan 4"></div>
+          <figcaption>
+            <span>04</span>
+            <p>Senja bisa datang sekali sehari, tapi kamu berhasil membuat hari-hariku terasa seperti senja yang indah.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="photo-card card-e">
+          <div class="photo-frame"><img src="assets/photo-5.jpg" alt="Foto kenangan 5"></div>
+          <figcaption>
+            <span>05</span>
+            <p>Dan yang paling kusuka: versi kamu yang apa adanya, tanpa perlu menjadi siapa pun selain dirimu sendiri.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page page-4" data-page="3">
+      <div class="final-particles" aria-hidden="true"></div>
+      <div class="closing">
+        <p class="eyebrow">before this little story ends</p>
+        <div class="heart">♡</div>
+        <h2>Untuk kamu,<br>selalu.</h2>
+        <p class="closing-text">
+          Kalau halaman ini bisa menyimpan satu hal selamanya,<br>
+          aku ingin menyimpan senyum kamu di dalamnya.
+        </p>
+        <p class="closing-text small">
+          Selamat untuk hari kecil yang spesial ini.<br>
+          Semoga kamu selalu menemukan alasan untuk bahagia,<br>
+          dan semoga aku masih boleh menjadi salah satu alasan itu.
+        </p>
+        <div class="final-line"></div>
+        <p class="closing-sign">Happy My Girl Day 🤍</p>
+      </div>
+      <div class="restart-wrap">
+        <button id="restartBtn" class="restart-btn">↻ ulangi dari awal</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-dots" aria-label="Navigasi halaman">
+    <button class="dot active" data-go="0" aria-label="Halaman 1"></button>
+    <button class="dot" data-go="1" aria-label="Halaman 2"></button>
+    <button class="dot" data-go="2" aria-label="Halaman 3"></button>
+    <button class="dot" data-go="3" aria-label="Halaman 4"></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
